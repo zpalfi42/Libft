@@ -1,5 +1,5 @@
 <h1 align="center">Libft</h1>
-<h4>This is the first project as a student in 42. In this project you will have to replicate a few functions that alredy exist in standard c libraries, and create some of your own</h4>
+<h4>This is the first project as a student in 42. In this project you will have to replicate a few functions that alredy exist in standard c libraries, and create some of your own.</h4>
 
 ## 📖 Content 📖
 
