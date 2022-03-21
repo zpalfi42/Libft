@@ -14,10 +14,14 @@
 - **String Functions** : [*itoa*](./src/ft_itoa.c), [*split*](./src/ft_split.c), [*striteri*](./src/ft_striteri.c), [*strjoin*](./src/ft_strjoin.c), [*strmapi*](./src/ft_strmapi.c), [*strtrim*](./src/ft_strtrim.c), [*substr*](./src/ft_substr.c)
 - **Print Functions** : [*putchar*](./src/ft_putchar_fd.c), [*putendl*](./src/ft_putendl_fd.c), [*putnbr*](./src/ft_putnbr_fd.c), [*putstr*](./src/ft_putstr_fd.c)
 
-### 💯 Bonus Functions 💯
+### 🚀 Bonus Functions 🚀
 
 - **Struct Functions** : [*lstaddback*](./src/ft_lstaddback.c), [*lstaddfront*](./src/ft_lstaddfront.c), [*lstclear*](./src/ft_lstclear.c), [*lstdelone*](./src/ft_lstdelone.c), [*lstiter*](./src/ft_lstiter.c), [*lstlast*](./src/ft_lstlast.c), [*lstmap*](./src/ft_lstmap.c), [*lstnew*](./src/ft_lstnew.c), [*lst*](./src/ft_lstsize.c)
 
-## Mark
+## 💯 Mark 💯
 
-<a align="center"><img src="./Addings/Mark"></a>
+<p align="center">
+  <a align="center">
+    <img src="./Addings/Mark.png">
+  </a>
+</p>
