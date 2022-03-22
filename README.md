@@ -53,9 +53,11 @@
 
 #### If you want to include your own libraries too:
 
-`INC				= -I $("") $(LIBS_HEADERS)`
+`INC				= -I $("YOUR_INCLUDE_DIR") $(LIBS_HEADERS)`
 
 `CFLAGS		= -Wall -Wextra -Werror -g $(INC)`
+
+#### Anyway, I have some [`C templates`](https://github.com/Zsolt42/42_Cursus_zpalfi/tree/main/C_Templates) if you want to see more clearly how to do it 😄😄
 
 ## 💯 Mark 💯
 
