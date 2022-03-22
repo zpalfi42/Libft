@@ -41,6 +41,10 @@
 
 `⠀⠀⠀⠀⠀⠀⠀⠀@$(CC) $(OBJ) $(LIBS) -o $(NAME)`
 
+#### Add in your `%.o:%.c` rule:
+
+`@$(CC) -c $(CFLAGS) -o $@ $^`
+
 #### And last thing is to add a new rule:
 
 `$(LIBS_DIR)/Libft/libft.a:`
