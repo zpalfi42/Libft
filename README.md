@@ -21,6 +21,38 @@
 
 - **Struct Functions** : [`lstaddback`](./src/ft_lstaddback.c) [`lstaddfront`](./src/ft_lstaddfront.c) [`lstclear`](./src/ft_lstclear.c) [`lstdelone`](./src/ft_lstdelone.c) [`lstiter`](./src/ft_lstiter.c) [`lstlast`](./src/ft_lstlast.c) [`lstmap`](./src/ft_lstmap.c) [`lstnew`](./src/ft_lstnew.c) [`lst`](./src/ft_lstsize.c)
 
+## 💣 Adding Libft to your project 💣
+
+#### To add Libft in your project you should add this lines on your Makefile:
+
+`LIBS_DIR	= libs`
+
+`LIBS			= $(LIBS_DIR)/Libft/libft.a \`
+
+`LIBS_HEADERS	= -I $(LIBS_DIR)/Libft/include/ \`
+
+#### Add in your `CFLAGS` rule:
+
+`CFLAGS		= -Wall -Wextra -Werror -g $(LIB_HEADERS)`
+
+#### Add in your `$(NAME): $(OBJ)`:
+
+`$(NAME): $(OBJ) $(LIBS)`
+
+`⠀⠀⠀⠀⠀⠀⠀⠀@$(CC) $(OBJ) $(LIBS) -o $(NAME)`
+
+#### And last thing is to add a new rule:
+
+`$(LIBS_DIR)/Libft/libft.a:`
+
+`⠀⠀⠀⠀⠀⠀⠀⠀@make -C $(LIBS_DIR)/Libft`
+
+#### If you want to include your own libraries too:
+
+`INC				= -I $("") $(LIBS_HEADERS)`
+
+`CFLAGS		= -Wall -Wextra -Werror -g $(INC)`
+
 ## 💯 Mark 💯
 
 <p align="center">
