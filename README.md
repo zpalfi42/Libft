@@ -1,9 +1,9 @@
 <h1 align="center">Libft</h1>
 <h4>This is the first project as a student in 42. In this project you will have to replicate a few functions that alredy exist in standard c libraries, and create some of your own.</h4>
 
-## 📖 Content 📖
-
-### 📚 Libc Functions 📚
+<h2 align="center">📖 Content 📖</h2>
+<h4>&nbsp;</h4>
+<h3 align="center">📚 Libc Functions 📚</h3>
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
@@ -31,7 +31,8 @@
 | [memset](./src/ft_memset.c)  | Memory | void	*ft_memset(void *b, int c, size_t n) | Copies the character `c` (an unsigned char) to the first `n` characters of the string pointed to, by the argument `b`. |
 | [calloc](./src/ft_calloc.c)  | Memory | void	*ft_calloc(size_t count, size_t size) | Allocates the requested memory and returns a pointer to it. |
 
-### ✍️ Aditional Functions ✍️
+<h3>&nbsp;</h3>
+<h3 align="center">✍️ Aditional Functions ✍️</h3>
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
@@ -47,21 +48,23 @@
 | [`putnbr`](./src/ft_putnbr_fd.c)  | Print | void	ft_putnbr_fd(int nbr, int fd) | Writes the `nbr` number on the file descriptor given |
 | [`putstr`](./src/ft_putstr_fd.c)  | Print | void	ft_putstr_fd(char *s, int fd) | Writes the `s` string on the file descriptor given |
 
-### 🚀 Bonus Functions 🚀
+<h3>&nbsp;</h3>
+<h3 align="center">🚀 Bonus Functions 🚀</h3>
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
-| [`lstaddback`](./src/ft_lstaddback.c)  | Struct | void ft_lstadd_back(t_list **lst, t_list *new) | Adds the `new` elemnt to the end of the `lst` list|
-| [`lstaddfront`](./src/ft_lstaddfront.c)| Struct | void ft_lstadd_front(t_list **lst, t_list *new) | Adds the `new` elemnt to the start of the `lst` list |
-| [`lstclear`](./src/ft_lstclear.c)      | Struct | void ft_lstclear(t_list **lst, void (*del)(void*)) | Deletes and frees every element of the list `lst` using the `del` function and free(3). Last pointer of the list must be set to NULL. |
-| [`lstdelone`](./src/ft_lstdelone.c)    | Struct | void ft_lstdelone(t_list *lst, void (*del)(void*)) | Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function `del` given as a parameter, then frees the link’s memory using free(3). The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel in the mandatory part). |
-| [`lstiter`](./src/ft_lstiter.c)        | Struct | void ft_lstiter(t_list *lst, void (*f)(void *)) | Iterates the list lst and applies the function `f` to each link. |
-| [`lstlast`](./src/ft_lstlast.c)        | Struct | t_list *ft_lstlast(t_list *lst) |
-| [`lstmap`](./src/ft_lstmap.c)          | Struct | t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *)) | Iterates a list lst and applies the function f to each link to create a “fresh” list (using malloc(3)) resulting from the successive applications of f. If the allocation fails, the function returns NULL. |
-| [`lstnew`](./src/ft_lstnew.c)          | Struct | t_list *ft_lstnew(void *content) | Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content_size is initialized to 0 even if the parameter content_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL. |
-| [`lstsize`](./src/ft_lstsize.c)        | Struct | int ft_lstsize(t_list *lst) | Count the number of elements in the list `lst` |
+| [lstaddback](./src/ft_lstaddback.c)  | Struct | void ft_lstadd_back(t_list **lst, t_list *new) | Adds the `new` elemnt to the end of the `lst` list|
+| [lstaddfront](./src/ft_lstaddfront.c)| Struct | void ft_lstadd_front(t_list **lst, t_list *new) | Adds the `new` elemnt to the start of the `lst` list |
+| [lstclear](./src/ft_lstclear.c)      | Struct | void ft_lstclear(t_list **lst, void (*del)(void*)) | Deletes and frees every element of the list `lst` using the `del` function and free(3). Last pointer of the list must be set to NULL. |
+| [lstdelone](./src/ft_lstdelone.c)    | Struct | void ft_lstdelone(t_list *lst, void (*del)(void*)) | Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function `del` given as a parameter, then frees the link’s memory using free(3). The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel in the mandatory part). |
+| [lstiter](./src/ft_lstiter.c)        | Struct | void ft_lstiter(t_list *lst, void (*f)(void *)) | Iterates the list lst and applies the function `f` to each link. |
+| [lstlast](./src/ft_lstlast.c)        | Struct | t_list *ft_lstlast(t_list *lst) |
+| [lstmap](./src/ft_lstmap.c)          | Struct | t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *)) | Iterates a list lst and applies the function f to each link to create a “fresh” list (using malloc(3)) resulting from the successive applications of f. If the allocation fails, the function returns NULL. |
+| [lstnew](./src/ft_lstnew.c)          | Struct | t_list *ft_lstnew(void *content) | Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content_size is initialized to 0 even if the parameter content_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL. |
+| [lstsize](./src/ft_lstsize.c)        | Struct | int ft_lstsize(t_list *lst) | Count the number of elements in the list `lst` |
 
-## 💣 Adding Libft to your project 💣
+<h3>&nbsp;</h3>
+<h3 align="center">💣 Adding Libft to your project 💣</h3>
 
 #### To add Libft in your project you should add this lines on your Makefile:
 
@@ -99,7 +102,8 @@
 
 #### Anyway, I have some [`C templates`](https://github.com/Zsolt42/42_Cursus_zpalfi/tree/main/C_Templates) if you want to see more clearly how to do it 😄😄
 
-## 💯 Mark 💯
+<h3>&nbsp;</h3>
+<h2 align="center">💯 Mark 💯</h2>
 
 <p align="center">
   <a align="center">
