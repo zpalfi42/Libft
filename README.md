@@ -43,18 +43,18 @@
 | [strmapi](./src/ft_strmapi.c)  | String | char	*ft_strmapi(char const *s, char (*f)(unsigned int, char)) | Applies the function `f` to each character of the string `s` passed as argument by giving its index as first argument to create a “fresh” new string (with malloc(3)) resulting from the successive applications of `f`. |
 | [strtrim](./src/ft_strtrim.c)  | String | char	*ft_strtrim(char const *s1, char const *set)              | Allocates (with malloc(3)) and returns a copy of the string `s1` given as argument without the characters given as `set` at the beginning or at the end of the string. If `s1` has no `set` characters at the beginning or at the end, the function returns a copy of `s1`. If the allocation fails the function returns NULL. |
 | [substr](./src/ft_substr.c)    | String | char	*ft_substr(char const *s, unsigned int start, size_t len) | Allocates (with malloc(3)) and returns a “fresh” substring from the string `s` given as argument. The substring begins at indexstart and is of size `len`. If `start` and `len` aren’t refering to a valid substring, the behavior is undefined. If the allocation fails, the function returns NULL |
-| [`putchar`](./src/ft_putchar_fd.c)| Print | void	ft_putchar_fd(char c, int fd) | Writes the `c` character on the file descriptor given |
-| [`putendl`](./src/ft_putendl_fd.c)| Print | void	ft_putendl_fd(char *s, int fd)| Writes the `s` string on the file descriptor given followed by a new endline |
-| [`putnbr`](./src/ft_putnbr_fd.c)  | Print | void	ft_putnbr_fd(int nbr, int fd) | Writes the `nbr` number on the file descriptor given |
-| [`putstr`](./src/ft_putstr_fd.c)  | Print | void	ft_putstr_fd(char *s, int fd) | Writes the `s` string on the file descriptor given |
+| [putchar](./src/ft_putchar_fd.c)| Print | void	ft_putchar_fd(char c, int fd) | Writes the `c` character on the file descriptor given |
+| [putendl](./src/ft_putendl_fd.c)| Print | void	ft_putendl_fd(char *s, int fd)| Writes the `s` string on the file descriptor given followed by a new endline |
+| [putnbr](./src/ft_putnbr_fd.c)  | Print | void	ft_putnbr_fd(int nbr, int fd) | Writes the `nbr` number on the file descriptor given |
+| [putstr](./src/ft_putstr_fd.c)  | Print | void	ft_putstr_fd(char *s, int fd) | Writes the `s` string on the file descriptor given |
 
 <h3>&nbsp;</h3>
 <h3 align="center">🚀 Bonus Functions 🚀</h3>
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
-| [lstaddback](./src/ft_lstaddback.c)  | Struct | void ft_lstadd_back(t_list **lst, t_list *new) | Adds the `new` elemnt to the end of the `lst` list|
-| [lstaddfront](./src/ft_lstaddfront.c)| Struct | void ft_lstadd_front(t_list **lst, t_list *new) | Adds the `new` elemnt to the start of the `lst` list |
+| [lstaddback](./src/ft_lstadd_back.c)  | Struct | void ft_lstadd_back(t_list **lst, t_list *new) | Adds the `new` elemnt to the end of the `lst` list|
+| [lstaddfront](./src/ft_lstadd_front.c)| Struct | void ft_lstadd_front(t_list **lst, t_list *new) | Adds the `new` elemnt to the start of the `lst` list |
 | [lstclear](./src/ft_lstclear.c)      | Struct | void ft_lstclear(t_list **lst, void (*del)(void*)) | Deletes and frees every element of the list `lst` using the `del` function and free(3). Last pointer of the list must be set to NULL. |
 | [lstdelone](./src/ft_lstdelone.c)    | Struct | void ft_lstdelone(t_list *lst, void (*del)(void*)) | Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function `del` given as a parameter, then frees the link’s memory using free(3). The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel in the mandatory part). |
 | [lstiter](./src/ft_lstiter.c)        | Struct | void ft_lstiter(t_list *lst, void (*f)(void *)) | Iterates the list lst and applies the function `f` to each link. |
