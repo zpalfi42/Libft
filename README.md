@@ -1,9 +1,9 @@
 <h1 align="center">Libft</h1>
 <h4>This is the first project as a student in 42. In this project you will have to replicate a few functions that alredy exist in standard c libraries, and create some of your own.</h4>
 
-<h2 align="center">📖 Content 📖</h2>
-<h4>&nbsp;</h4>
-<h3 align="center">📚 Libc Functions 📚</h3>
+# 📖 Content 📖
+
+## 📚 Libc Functions 📚
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
@@ -31,8 +31,7 @@
 | [memset](./src/ft_memset.c)  | Memory | void	*ft_memset(void *b, int c, size_t n) | Copies the character `c` (an unsigned char) to the first `n` characters of the string pointed to, by the argument `b`. |
 | [calloc](./src/ft_calloc.c)  | Memory | void	*ft_calloc(size_t count, size_t size) | Allocates the requested memory and returns a pointer to it. |
 
-<h3>&nbsp;</h3>
-<h3 align="center">✍️ Aditional Functions ✍️</h3>
+## ✍️ Aditional Functions ✍️
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
@@ -48,8 +47,7 @@
 | [putnbr](./src/ft_putnbr_fd.c)  | Print | void	ft_putnbr_fd(int nbr, int fd) | Writes the `nbr` number on the file descriptor given |
 | [putstr](./src/ft_putstr_fd.c)  | Print | void	ft_putstr_fd(char *s, int fd) | Writes the `s` string on the file descriptor given |
 
-<h3>&nbsp;</h3>
-<h3 align="center">🚀 Bonus Functions 🚀</h3>
+## 🚀 Bonus Functions 🚀
 
 | Functions | Type | Prototype | What it does? |
 | --------- | ---- | --------- | ------------- |
@@ -63,8 +61,7 @@
 | [lstnew](./src/ft_lstnew.c)          | Struct | t_list *ft_lstnew(void *content) | Allocates (with malloc(3)) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content_size is initialized to 0 even if the parameter content_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL. |
 | [lstsize](./src/ft_lstsize.c)        | Struct | int ft_lstsize(t_list *lst) | Count the number of elements in the list `lst` |
 
-<h3>&nbsp;</h3>
-<h3 align="center">💣 Adding Libft to your project 💣</h3>
+## 💣 Adding Libft to your project 💣
 
 #### To add Libft in your project you should add this lines on your Makefile:
 
@@ -102,8 +99,7 @@
 
 #### Anyway, I have some [`C templates`](https://github.com/Zsolt42/42_Cursus_zpalfi/tree/main/C_Templates) if you want to see more clearly how to do it 😄😄
 
-<h3>&nbsp;</h3>
-<h2 align="center">💯 Mark 💯</h2>
+## 💯 Mark 💯
 
 <p align="center">
   <a align="center">
